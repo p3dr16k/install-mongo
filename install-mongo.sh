@@ -69,7 +69,7 @@ cat > /etc/init.d/mongodb << EOF
 if [ \$1 = "start" ]
 	then
 		rm /data/db/mongod.lock
-		(mongod --logpath /var/log/mongo/mongodb.log --dbpath /data/db)&
+		(mongod --journal --logpath /var/log/mongo/mongodb.log --dbpath /data/db)&
 else if [ \$1 = "stop" ]
 	 then
 		kill -9 \$(pidof mongod)

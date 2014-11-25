@@ -2,7 +2,7 @@ README
 ===========================================================
 
 This script install MongoDB (http://mongodb.org) on your system, 
-apache web server, php and the mpngodb php driver.
+apache web server, php and the mongodb php driver.
 
 Example of usage:
 

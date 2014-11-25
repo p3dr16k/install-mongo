@@ -91,3 +91,12 @@ echo "upstart successfully updated"
 
 cd $currentDir
 echo "MongoDB is Successfully installed and launched try to connect using mongo!"
+
+#install apache, php and mongodriver
+apt-get install -y build-essential apache2 libapache2-mod-php5 php-pear php5 php5-cli php5-common
+#install mongo extension
+pecl install mongo
+#mongo extension activation
+echo "extension=mongo.so" >> /etc/php5/apache2/php.ini
+/etc/init.d/apache2 restart
+

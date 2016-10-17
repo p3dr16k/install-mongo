@@ -24,7 +24,7 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #choose version to download
-versionToDownload="3.0.6"
+versionToDownload="3.2.10"
 
 if [ x != $1x ]
 then
